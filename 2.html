@@ -19,31 +19,55 @@
                 padding-bottom: 2%;
             }
 			table{
-				text-indent: 50px;
+				text-indent: 10px;
 			}
 			.bold{
 				font-weight: bold;
 			}
 			td{
-				align: justify;
+				align-content: justify;
 			}
             
         </style>
+
+   <script>
+        window.onload = function(){ 
+            var current = 0;
+            document.getElementById('rotate').onclick = function(){
+                current = (current+90)%360;
+                this.style.transform = 'rotate('+current+'deg)';
+            }
+        };
+    </script>
+
 
     </head>
       <body>  
             <p id ="tip">复配膨松剂车间是按照国家食品生产安全的现有标准来设计和建造的车间。车间的生产工艺，流程控制已成为现在重点考虑的对象。因此实时监控，及时发现生产过程中出现的对食品质量安全造成影响的问题以及及时解决问题，已成为现场质量检验的重点。
             </p>
            
-        <p id="head">受公司领导委托，现出具复配膨松剂车间监控系统设计方案：</p>
+		<p id="head">受公司领导委托，现出具复配膨松剂车间监控系统设计方案</p>
+		<p>方案硬性要求如下：</p>
+		<p>
+            &nbsp;
+		</p>
+				<p>
+            &nbsp;
+        </p>
             <p id ="p1">●　实时现场监控点位12位置（如下图）</p>
-            <p>●　其中2点位要求记录储存183天以上（重点，见左侧导航）</p>
-            <p>●　复配膨松剂车间大屏实时显示每点位实时视频，视距要求各点位3米内清晰可见。（重点，见左侧导航）</p>
-            <p>●　监控点线路整洁，不露线，线管不贴墙。</p>
-			<p>规划图</p>
-            <img src="map.jpg" width="80%" height="80%">
-			<hr/>
-            <p class="bold" id ="p2">●　其中2点位要求记录储存183天以上</p>
+            <p>●　<strong>其中2点位要求记录储存183天以上</strong>（重点，见左侧导航）</p>
+            <p>●　<strong>复配膨松剂车间综控室大屏实时显示每点位实时视频</strong>，视距要求各点位5米内清晰可见。（重点，见左侧导航）</p>
+			<p>●　监控点线路整洁，不露线，线管不贴墙。</p>
+					<p>
+            &nbsp;
+		</p>
+				<p>
+            &nbsp;
+        </p>
+			<p>规划图 (点击图片可以旋转角度）</p>
+            <img id="rotate" src="map.jpg" width="80%" height="80%">
+			<hr id ="p2" />
+            <p class="bold" >●　其中2点位要求记录储存183天以上</p>
             <p>因厂区原有监控系统所有点位存储时间全部为7~12天，如贸然接入需要存储183天录像时间以上的监控点，则系统容易出现问题，主要原因是：
                 </br>1.设置系统锁住存储空间以后，如有监控点出现问题，会导致锁住的空间变动，造成混乱。</br>
                 2.很容易误操作。</br>
@@ -53,20 +77,23 @@
                 故推荐增加一台录像机解决此问题。新增的录像机专用于应对超长期录像时间保存。专机专用能更稳定地运行。
             </p>
                  
-            <p>因此项而增加的费用为900元。</p>
+            <p>因此项而增加的主机费用为800元。</p>
 			
             <img src="nvr.jpg" width="40%" height="40%">
-			<hr/>
-            <p class="bold" id ="p3">●　复配膨松剂车间大屏实时显示每点位实时视频，视距要求各点位3米内清晰可见。</p>
+			<hr id ="p3" />
+            <p class="bold">●　复配膨松剂车间大屏实时显示每点位实时视频，视距要求各点位3米内清晰可见。</p>
             <p>要求远距离辨识屏幕上显示的各监控现场，必须组显示幕墙。</p>
-            <p class="bold" >以下数种方案提供参考：（每个方案总价为独立价格）</br>
-            1.经济的2种方案</p>
+			<p class="bold" >以下数种方案提供参考：（每个方案总价为独立价格）</p>
+			<hr id="p3.1"/>
+            <p>一.经济的2种方案</p>
             <p>
-                最经济：并排摆放3台55寸普通显示器。每台显示器配置一台高清解码器同时解析4画面。
+                1.并排摆放3台55寸普通显示器。每台显示器配置一台高清解码器同时解析4画面。
             </p>
 			<p>示意图</p>
-			<img src="3scr.jpg" width="40%" height="40%">
-			<table border="1" cellpadding="5">
+			
+			<img src="3scr.jpg" width="40%" height="40%"/>
+			<img src="55_3.gif" width="40%" height="40%" alt=""/>
+			<table border="1" cellpadding="2">
 			<tr>
 			<th>设备名</td><th>选型</td><th>单价</td><th>数量</td><th>金额</td>
 			</tr>
@@ -89,14 +116,14 @@
 			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>此项总价</td><td>14810</td>
 			</tr>
 			</table>
-
-			<hr/>
-            <p>或</p>
+			<p style="color: red";>安装尺寸：宽：3.9米。高：0.8米</p>
+			<hr id="p3.2"/>
             <p>
-                挂12台42寸普通显示器。将显示器按3*4矩阵摆放，每台显示器配置一台数字解码器显示单画面。
+                2.挂12台42寸普通显示器。将显示器按3*4矩阵摆放，每台显示器配置一台数字解码器显示单画面。
             </p>
-			<p>示意图</p>
+			<p>示意图(注：实际效果边框感很强，远没有图片中的效果好)</p>
 			<img src="12scr.jpg" width="40%" height="40%">
+			<img src="55_12.gif" width="40%" height="40%">
 			<table border="1" cellpadding="5">
 			<tr>
 			<th>设备名</td><th>选型</td><th>单价</td><th>数量</td><th>金额</td>
@@ -114,18 +141,19 @@
 			<td>视频信号延长线</td><td>数字转HDMI延长线/6米</td><td>50</td><td>12</td><td>600</td>
 			</tr>
 			<tr>
-			<td>千兆交换机</td><td>8口千兆监控汇聚交换机</td><td>460</td><td>1</td><td>460</td>
+			<td>千兆交换机</td><td>16口千兆监控汇聚交换机</td><td>460</td><td>1</td><td>460</td>
 			</tr>
 			<tr>
 			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>此项总价</td><td>58660</td>
 			</tr>
 			</table>
-			<hr/>
+			<p style="color: red";>安装尺寸：宽：5.2米。高：2.4米</p>
+			<hr id="p3.3"/>
             <p>
-            2.专业的方案
+            二.专业的方案
             </p>
 			<p>
-			使用专业矩阵屏幕，12台46吋矩阵显示器使用专用支架安装，用矩阵解码器同时控制12显示器显示12监控画面，使用电脑控制矩阵解码器。此方案属于定制工艺，有以下优势：
+			使用专业矩阵屏幕，12台55吋矩阵显示器使用专用支架安装，用矩阵解码器同时控制12显示器显示12监控画面，使用电脑控制矩阵解码器。此方案属于定制工艺，有以下优势：
 			</p>
             <p>
            	屏幕拼接仅微缝（间距3.5mm）几乎不可见。
@@ -138,7 +166,7 @@
             </p>
 			<img src="pj5.jpg" width="22%" height="20%">
             <p>
-            单位屏清晰度1080P亮度500cd/m2，（普通显示屏350cd/m2）屏幕高宽比16:9。
+            单位屏清晰度1080P亮度500cd/㎡ ，（普通显示屏350cd/㎡ ）屏幕高宽比16:9。
             </p>
             <p>
             可任意分割，拼合屏幕，如4屏幕显示1画面，8屏显示1画面，画中画。甚至12屏幕1画面，达到超大屏的震撼效果。
@@ -159,7 +187,8 @@
 			<th>设备名称</th><th>选型及配置</th><th>品牌型号</th><th>单位</th><th>数量</th><th>单价</th><th>金额</th>
 			</tr>
 			<tr>
-			<td>46寸液晶拼接单元</td><td>物理拼接屏缝宽度:3.5mm<hr/>清晰度:1080p<hr/>分辨率:1920X1080<hr/>亮度:500cd/m2<hr/>对比度:3000:1<hr/>屏幕高宽比16:9<hr/>矩阵组合方式:4行X3列</td><td>HC55-BJP</td><td>台</td><td>12</td><td>3600</td><td>43200</td>
+			<td>55寸液晶拼接单元</td><td>物理拼接屏缝宽度:3.5mm<hr/>清晰度:1080p<hr/>分辨率:1920X1080<hr/>亮度:500cd/㎡ <hr/>对比度:3000:1<hr/>屏幕高宽比16:9<hr/>矩阵组合方式:4行X3列</td>
+			<td>HC55-BJP</td><td>台</td><td>12</td><td>3600</td><td>43200</td>
 			</tr>
 			<tr>
 			<td>矩阵处理器</td><td>完美的嵌入式结构设计<hr/>支持365天24小时不间断工作<hr/>具有信号加强功能<hr/>色彩无偏差，温控风扇低音降噪<hr/>系统运行环境：操作系统Windows2000/XP/WIN7/Vista<hr/>输入类型：2路BNC，1路VGA输入,1路HDMI输入;1路DVI输入<hr/>串口类型：标准RS232通讯接口或其兼容型号，</td>
@@ -169,7 +198,7 @@
 			<td>解码矩阵</td><td>高清解码矩阵12位解码板</td><td>HCs2</td><td>台</td><td>1</td><td>12400</td><td>12400</td>
 			</tr>
 			<tr>
-			<td>定制壁挂</td><td>定制支架，铝合金材质</td><td>联昊</td><td>单元</td><td>12</td><td>320</td><td>3840</td>
+			<td>定制壁挂</td><td>定制支架，铝合金材质</td><td>联昊</td><td>单元</td><td>12</td><td>560</td><td>6720</td>
 			</tr>
 			<tr>
 			<td>控制软件</td><td>专业拼接控制软件</td><td>京东方</td><td>套</td><td>1</td><td>6000</td><td>6000</td>
@@ -184,17 +213,78 @@
 			<td>包装运输费</td><td>含打木架，含运费</td><td>--</td><td>批</td><td>1</td><td>2400</td><td>2400</td>
 			</tr>
 			<tr>
-			<td>技术服务费</td><td>安装调试费</td><td>--</td><td>次</td><td>1</td><td>6000</td><td>6000</td>
+			<td>控制电脑</td><td>i5处理器笔记本</td><td>--</td><td>台</td><td>1</td><td>3300</td><td>3300</td>
 			</tr>
 			<tr>
-			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>此项总价：</td><td>RMB</td><td>114840</td>
+			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>此项总价：</td><td>RMB</td><td>115020</td>
 			</tr>
 			</table>
-			<img src="pj6.jpg" width="60%" height="60%">
-			<hr/>
-            <p id ="p4">●　综合推荐方案</p>
+			<p style="color: red";>安装尺寸：宽：4.1米。高：1.8米</p>
+			<img src="pj6.jpg" width="50%" height="50%">
+			<img src="55zl_12.gif" width="45%" height="45%">
+			<p>折中方案示意图</p>
+			<img src="55zl_6.gif" width="45%" height="45%">
+			<hr id ="p3.4"/>
+			<p>三. LED广告屏</p>
+			<p style="font-size:12px">个人比较看好。效果可见各广场、商场的广告屏，这里的方案分辨率更高。</p>
+			<p>使用大型LED广告屏做实时监控显示屏</p>
+			
+			<p>综合优势：亮度最大，即使在阳光下也能高度清晰。最高的大屏性价比。可随意定制尺寸。外包安装，省工省力。</p>
+			<p>劣势：3米内观看效果较差。稳定性偏低，模块寿命较显示器短。耗电量较大，最大功率1kw/㎡ 。电脑必须解码流媒体，所以配置要求更高。</p>
+			<img src="led.jpg" width="45%" height="45%">
+			<img src="led1.jpg" width="45%" height="45%">
+			<table border="1" cellpadding="5">
+			<tr>
+			<th>设备名</th><th>规格</th><th>单位</th><th>数量</th><th>单价</th><th>总价</th>
+			</tr>
+			<tr>
+			<td>P2.5全彩屏</td><td>3.84米X2.304米 </td><td>㎡ </td><td>9
+</td><td>4700</td><td>42300</td>
+			</tr>
+			<tr>
+			<td>LED稳压电源</td><td>常州创联耐高低温5V40A</td><td>PCS</td><td>40</td><td>260</td><td>10400</td>
+			</tr>
+			<tr>
+			<td>发送卡</td><td>kystar</td><td>张</td><td>1</td><td>2550</td><td>2550</td>
+			</tr>
+			<tr>
+			<td>接收卡</td><td>kystar</td><td>张</td><td>10</td><td>1500</td><td>15000</td>
+			</tr>
+					<tr>
+			<td>视频处理器</td><td>6路信号输入，双画面分割P1000</td><td>台</td><td>1</td><td>1680</td><td>1680</td>
+			</tr>
+					<tr>
+			<td>LED屏钢架+专业包边</td><td>3.93*2.394</td><td>㎡</td><td>9.4</td><td>450</td><td>4230</td>
+			</tr>
+					<tr>
+			<td>安装费用</td><td>安装、调试、培训<hr/>（技术人员上门，客户提供人员协助）<hr/>客户提供住宿</td><td>--</td><td>1</td><td>2000</td><td>2000</td>
+			</tr>
+					<tr>
+			<td>物流+保险+包装</td><td>货到客户自提</td><td>--</td><td>1</td><td>500</td><td>500</td>
+			</tr>
+			<tr>
+			<td>i7处理器电脑</td><td>高速显卡</td><td>台</td><td>1</td><td>4000</td><td>4000</td>
+			</tr>
+			<tr>
+			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>此项总价</td><td>82660</td>
+			</tr>
+			</table>
+			<img src="LEDtp.jpg" width="55%" height="55%">
+			<img src="LEDsize.gif" width="35%" height="35%">
+			<p>售后服务及交付</p>
+			<p>基于对本公司产品品质的依赖和对 LED 显示屏项目的重视， 在此我们郑重承诺：</p>
+			<p>本公司负责终身维护， 免费质保 2 年， 2 年后只收取较低维修成本费；</p>
+			<p>
+			免费对贵公司操作人员培训指导； 培训范围： 维修， 维护， 调试， 安装， 使用。
+			</p>
+			<p>付款方式为合同签订后先付订金 30%立即组织生产</p>
+			<p>货到客户当地物流点付 65%</p>
+			<p>安装试调完毕交付客户使用付清尾款 5%。</p>
+			<p>此项目我司自预付订金到账起 3 天内发货， 运输 3-4 天， 安装 2 天</p>
+			<hr id ="p4" />
+            <p>●　监控系统推荐方案</p>
             <p>
-                因超大屏方案预算金额相差较大，必须由公司领导决定。因此，推荐方案预算未包含超大屏预算。预算中仅含本期（第四期）纯监控系统工程预算。
+                因超大屏方案预算金额相差较大，必须由公司领导决定。因此，推荐方案预算<strong style="color:red">未包含</strong>超大屏预算。预算中仅含本期（第四期）纯监控系统工程预算。
             </p>
             
 			<table border="1" cellpadding="5">
@@ -217,13 +307,13 @@
 			<td>水晶头</td><td>AMP超五类水晶头</td><td>100</td><td>1.6</td><td>160</td>
 			</tr>
 			<tr>
-			<td>千兆交换机</td><td>POE交换机</td><td>6</td><td>330</td><td>1980</td>
+			<td>千兆交换机</td><td>POE交换机</td><td>6</td><td>317</td><td>1902</td>
 			</tr>
 						<tr>
 			<td>硬盘</td><td>西数4T监控级</td><td>3</td><td>1050</td><td>3150</td>
 			</tr>
 						<tr>
-			<td>显示器</td><td>飞利浦21.5寸</td><td>2</td><td>820</td><td>1640</td>
+			<td>显示器</td><td>飞利浦24寸</td><td>2</td><td>800</td><td>1600</td>
 			</tr>
 						<tr>
 			<td>支架</td><td>海康威视原装支架</td><td>12</td><td>35</td><td>420</td>
@@ -232,7 +322,7 @@
 			<td>电源</td><td>12V2A防雨监控电源</td><td>12</td><td>18</td><td>216</td>
 			</tr>
 						<tr>
-			<td>防雷光转换器</td><td>千兆多光纤转换器</td><td>2</td><td>260</td><td>520</td>
+			<td>防雷光转换器</td><td>千兆多光纤转换器</td><td>2</td><td>180</td><td>360</td>
 			</tr>
 						<tr>
 			<td>铜电源线</td><td>两芯铜电源线2.5mm</td><td>400</td><td>3</td><td>1200</td>
@@ -241,7 +331,7 @@
 			<td>PVC管</td><td>20#</td><td>100</td><td>3</td><td>300</td>
 			</tr>
 									<tr>
-			<td>插座</td><td>10孔插座</td><td>6</td><td>30</td><td>180</td>
+			<td>插座</td><td>10孔插座加1A空开</td><td>6</td><td>22</td><td>130</td>
 			</tr>
 									<tr>
 			<td>室内外配电箱</td><td>防水</td><td>6</td><td>80</td><td>480</td>
@@ -250,12 +340,28 @@
 			<td>线钳</td><td>--</td><td>1</td><td>60</td><td>60</td>
 			</tr>
 			<tr>
-			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>此项总价</td><td>19846</td>
+			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>此项总价</td><td>19520
+</td>
 			</tr>
 			</table>
         
         <p>
-            
+            &nbsp;
+		</p>
+		<p>
+            &nbsp;
+		</p>
+		<p>
+            &nbsp;
+		</p>
+		<p>
+            &nbsp;
+		</p>
+		<p>
+            &nbsp;
+		</p>
+		<p>
+            &nbsp;
         </p>
     </body>
 </html>
