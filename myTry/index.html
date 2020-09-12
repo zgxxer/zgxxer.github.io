@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<style>
+
+    #abb{
+      
+        font-size : 60px;
+    }
+    #bas{
+        top:30%;
+        width:30%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #abc{
+  
+        font-size: 70px;
+        width:40%;
+
+        margin-left:auto;
+        margin-right:auto;
+    }
+</style>
+<html>
+<body>
+
+
+    <div id="abb">
+<h1 id="bas">0</h1>
+</div>
+
+
+<div id="abc">
+<button id ="abc" type = "button"
+    onclick="document.getElementById('bas').innerHTML = plus()">
+数字加加</button>
+</div>
+
+<script>
+    var a = 0;
+function plus(){
+    
+    return a++;
+}
+
+</script>
+
+</body>
+</html> 
